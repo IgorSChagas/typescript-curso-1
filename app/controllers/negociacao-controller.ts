@@ -1,0 +1,23 @@
+import { Negociacao } from "../models/negociacao.js"
+
+export class NegociacaoController {
+	private readonly inputData
+	private readonly inputQuantidate
+	private readonly inputValor
+
+	constructor() {
+		this.inputData = document.querySelector("#data")
+		this.inputQuantidate = document.querySelector("#quantidade")
+		this.inputValor = document.querySelector("#valor")
+	}
+
+	adiciona() {
+		const negociacao = new Negociacao(
+			this.inputData,
+			this.inputQuantidate,
+			this.inputValor
+		)
+
+		console.log(negociacao)
+	}
+}
