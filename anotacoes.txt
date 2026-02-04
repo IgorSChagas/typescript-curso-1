@@ -1,0 +1,13 @@
+- Uma classe abstrata não pode ser criada uma instancia
+
+- Type Generics é quando você seta uma tipo de props para dentro de uma classe, ou seja
+View<T> (View é uma classe com tipagem genérica), então seus parâmetros de função podem ser
+originados de qualquer tipo, por exemplo:
+    template(model: Negociacoes): string 
+    template(model: string): string
+
+- Método abstrato -> um método abstrato é utilizado só como referencia para que a classe filha
+dessa classe abstrata pai, obrigatoriamente defina o método dentro dela própria. por exemplo:
+    abstract template(model: T): string
+
+- 
