@@ -10,4 +10,4 @@ originados de qualquer tipo, por exemplo:
 dessa classe abstrata pai, obrigatoriamente defina o método dentro dela própria. por exemplo:
     abstract template(model: T): string
 
-- 
+- Metodo privado só pode ser acessado pela propria classe
